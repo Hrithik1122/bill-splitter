@@ -23,6 +23,6 @@
 
 ## 🔨 Set up
 - Download and install Git
-- `> git clone https://github.com/hrithik1122/splitter.git`
+- `git clone https://github.com/Hrithik1122/splitter.git`
 - Open `index.html` file on a browser.
 
