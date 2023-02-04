@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Splitter</title>
+</head>
+
+<body>
+    <div class="splitter-container">
+        <div class="splitter-title">SPLI</br>TTER</div>
+
+        <form class="splitter-calculator">
+            <!-- LEFT COLUMN OF SPLITTER -->
+            <div class="splitter-column splitter-column__left">
+                <!-- BILL -->
+                <div class="splitter-section section-bill">  
+                    <label class="splitter-section__title title__dark">Bill</label>
+                    <input class="splitter-section__input" id="bill" type="number" placeholder="0" />
+                    <div class="error bill-error">Can't be zero.</div>
+                </div>
+
+                <!-- TIP PERCENTAGE -->
+                <div class="splitter-section section-percentage">
+                    <label class="splitter-section__title title__dark">Select Tip %</label>
+                    <div class="splitter-section__options">
+                        <div class="splitter-section__option option__radio">
+                            <input class="splitter-section__input" type="radio" id="5%" name="tip-percentage"
+                                value="5" />
+                            <label for="5%">5%</label>
+                        </div>
+                        <div class="splitter-section__option option__radio">
+                            <input class="splitter-section__radio splitter-section__input" type="radio" id="10%" name="tip-percentage"
+                                value="10" />
+                            <label for="10%">10%</label>
+                        </div>
+                        <div class="splitter-section__option option__radio">
+                            <input class=" splitter-section__input" type="radio" id="15%" name="tip-percentage"
+                                value="15" />
+                            <label for="15%">15%</label>
+                        </div>
+                        <div class="splitter-section__option option__radio">
+                            <input class="splitter-section__input" type="radio" id="20%" name="tip-percentage"
+                                value="20" />
+                            <label for="20%">20%</label>
+                        </div>
+                        <div class="splitter-section__option option__radio">
+                            <input class="splitter-section__input" type="radio" id="50%" name="tip-percentage"
+                                value="50" />
+                            <label for="50%">50%</label>
+                        </div>
+                        <input class="splitter-section__option option__input" id="customTip" type="number" placeholder="Custom" value="custom"/>
+                    </div>
+                </div>
+
+                <!-- NUMBER OF PEOPLE -->
+                <div class="splitter-section section-numberOfPeople">
+                    <label class="splitter-section__title title__dark">
+                        Number of People
+                    </label>                  
+                    <input class="splitter-section__input" type="number" id="numberOfPeople" placeholder="0"/>
+                    <div class="error numberOfPeople-error">Can't be zero.</div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN OF SPLITTER -->
+            <div class="splitter-column splitter-column__right">
+                <div class="splitter-section__result result__tipAmount">
+                    <div class="result__left">
+                        <p class="result__title">Tip Amount</p>
+                        <p class="result__unit">/ person</p>
+                    </div>
+                    <div class="result__right">
+                        <p class="euro-sign">$</p><p class="result__value" id="tipPerPerson">0</p>
+                    </div>
+                </div>
+                <div class="splitter-section__result result__total">
+                    <div class="result__left">
+                        <p class="result__title">Total</p>
+                        <p class="result__unit">/ person</p>
+                    </div>
+                    <div class="result__right">
+                        <p class="euro-sign">$</p><p class="result__value" id ="billPerPerson">0</p>
+                    </div>
+                </div>
+            
+            <input class="reset-btn inactive" type="button" value="RESET"/>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
