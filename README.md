@@ -1,4 +1,4 @@
-# Splitter
+# Bill Splitter
 
 <p align="center">
   <img width="460" height="300" src="./assets/demo.gif">
@@ -23,6 +23,6 @@
 
 ## 🔨 Set up
 - Download and install Git
-- `> git clone https://github.com/chepark/splitter.git`
+- `> git clone https://github.com/hrithik1122/splitter.git`
 - Open `index.html` file on a browser.
 
