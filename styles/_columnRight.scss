@@ -1,0 +1,76 @@
+// COLUMN RIGHT
+.splitter-column__right {
+  background-color: $dark-cyan;
+  border-radius: 15px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.splitter-section__result {
+  max-width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.result__title {
+  color: white;
+  margin: 0;
+}
+
+.result__unit {
+  color: $grayish-cyan;
+  margin: 0;
+}
+
+.result__value,
+.euro-sign {
+  font-size: 34px;
+  color: $input-focus-color;
+  margin: 0;
+}
+
+.result__left,
+.result__right {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.result__left {
+  flex-direction: column;
+}
+
+.result__right {
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.reset-btn {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 24px;
+  font-family: $primary-font;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+    background-color: $light-grayish-cyan;
+  }
+}
+
+// USE JS TO CHANGE
+// BG COLOR
+.reset-btn.active {
+  //   background-color: $input-focus-color;
+  color: $dark-cyan;
+}
+
+.reset-btn.inactive {
+  //   background-color: $button-inactive-bg;
+  color: $button-inactive-font;
+}

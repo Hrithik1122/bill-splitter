@@ -1,0 +1,122 @@
+// COLUMN LEFT
+.splitter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.splitter-section__title {
+  color: $dark-grayish-cyan;
+}
+
+.splitter-section__input,
+.option__input {
+  border-style: none;
+  background-color: $very-light-grayish-cyan;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  text-align: right;
+
+  font-family: $primary-font;
+  font-size: 24px;
+  font-weight: bold;
+  color: $dark-cyan;
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px $input-focus-color;
+    font-family: $primary-font;
+    font-size: 24px;
+    font-weight: bold;
+    color: $dark-cyan;
+  }
+  &::placeholder {
+    font-family: $primary-font;
+    font-size: 24px;
+    font-weight: bold;
+    color: $dark-grayish-cyan;
+    color: $grayish-cyan;
+  }
+}
+
+// ADD ICONS ON INPUTS
+#bill,
+#numberOfPeople {
+  background-repeat: no-repeat;
+  background-position: 1rem 1rem;
+}
+
+#bill {
+  background-image: url("../assets/dollarIcon.svg");
+}
+
+#numberOfPeople {
+  background-image: url("../assets/personIcon.svg");
+}
+
+.splitter-section__options {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 1.2rem;
+}
+
+.splitter-section__option {
+  display: flex;
+
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.splitter-section__option input {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.splitter-section__option label {
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.option__radio {
+  justify-content: center;
+  background-color: $dark-cyan;
+}
+
+.option__radio.checked {
+  background-color: $input-focus-color;
+  label {
+    color: $dark-cyan;
+  }
+}
+
+.option__input {
+  padding: 8px;
+  &::placeholder {
+    text-align: center;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+// Error message
+.section-bill,
+.section-numberOfPeople {
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: none;
+  color: $error;
+}
