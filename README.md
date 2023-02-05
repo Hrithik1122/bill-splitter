@@ -13,7 +13,7 @@
 
 - To learn styling the `<form>` element and the `<input>` element
 - To use Using media queries in Sass
-- To create a working product by matching the [UI design](https://www.figma.com/file/5PgWPwUclOBDelMDqlYfIl/tip-calculator-app?node-id=0%3A1) as closely as possible.
+- To create a working product by matching the UI design as closely as possible.
 
 ## 💻 Technologies
 
